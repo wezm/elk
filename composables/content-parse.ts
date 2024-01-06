@@ -81,7 +81,6 @@ export function parseMastodonHTML(
 ) {
   const {
     markdown = true,
-    replaceUnicodeEmoji = true,
     convertMentionLink = false,
     collapseMentionLink = false,
     hideEmojis = false,
@@ -89,6 +88,7 @@ export function parseMastodonHTML(
     status,
     inReplyToStatus,
   } = options
+  const replaceUnicodeEmoji = false
 
   if (markdown) {
     // Handle code blocks
